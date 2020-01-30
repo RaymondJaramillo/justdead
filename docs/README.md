@@ -10,9 +10,11 @@ Justdead will let your loved ones worry a little less.
 
 ## Intended users
 
-* Anybody who has had their phone die and had someone thinking the worst when they couldn't get a hold of them, so Everybody.
-* Parents of children who can be forgetful.
+* Parents who worry when children don't answer the phone.
 
+* A spouse who wants to let loved ones know that their phone is close to dying.
+
+### [User stories](user-stories.md)
 ## External services
 
 * Google maps SDK for And.
