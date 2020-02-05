@@ -16,13 +16,18 @@ Justdead will let your loved ones worry a little less.
 
 ### [User stories](user-stories.md)
 
+
 ## Design Documentation
+
 
 ### [Wireframe diagram](wireframe.md)
 
+
 ### [Entity-relationship diagram](erd.md)
 
+
 ## External services
+
 
 ### Google Map Services
 * [Google API](https://developers.google.com/maps/documentation/embed/get-api-key)
