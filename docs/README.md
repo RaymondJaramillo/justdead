@@ -32,7 +32,7 @@ Justdead will let your loved ones worry a little less.
 ### Google Map Services
 * [Google API](https://developers.google.com/maps/documentation/embed/get-api-key)
 * Justdead will take the current location, when a phone hits a certain percentage, and send it to selected contacts. 
-* App will be able to still function with out location features if user selects. Locations services are also only needed when a certain percentage is hit, not constantly running. 
+* App will be able to still function without location features, if user does not want to use location. Locations services are not constantly used, and only used when a specific battery percentage is hit. 
 
 ### Local Contacts 
 * [developer.android.com](https://developer.android.com/training/contacts-provider/retrieve-names)
