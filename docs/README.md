@@ -16,16 +16,6 @@ Justdead will let your loved ones worry a little less.
 
 ### [User stories](user-stories.md)
 
-
-## Design Documentation
-
-
-### [Wireframe diagram](wireframe.md)
-
-
-### [Entity-relationship diagram](erd.md)
-
-
 ## External services
 
 
@@ -43,3 +33,11 @@ Justdead will let your loved ones worry a little less.
 * [developer.android.com](https://developer.android.com/training/sharing/index.html)
 * A message and location will be sent through Messenger to selected contacts. 
 * This is another vital service for the functionality of the app.
+
+## Design Documentation
+
+
+### [Wireframe diagram](wireframe.md)
+
+
+### [Entity-relationship diagram](erd.md)
