@@ -23,9 +23,6 @@ public class Location {
   @PrimaryKey(autoGenerate = true)
   private long id;
 
-  @ColumnInfo(name = "location_id")
-  private long locationId;
-
   @ColumnInfo(name = "notification_id")
   private long notificationId;
 
@@ -44,14 +41,6 @@ public class Location {
 
   public void setId(long id) {
     this.id = id;
-  }
-
-  public long getLocationId() {
-    return locationId;
-  }
-
-  public void setLocationId(long locationId) {
-    this.locationId = locationId;
   }
 
   public long getNotificationId() {
