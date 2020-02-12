@@ -29,6 +29,6 @@ import java.util.List;
 
     @Query("SELECT loc.* FROM Location loc INNER JOIN Notification n ON n.notification_id = loc.notification_id ORDER BY n.battery DESC, loc.time_stamp")
     LiveData<List<Location>> select();
-  }
+
 
 }
