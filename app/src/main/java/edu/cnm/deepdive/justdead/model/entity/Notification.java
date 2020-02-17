@@ -7,7 +7,10 @@ import androidx.room.PrimaryKey;
 
 @Entity(
     indices =  {
-        @Index(value = "contact_name", unique = true)
+        @Index(value = "contact_name", unique = true),
+        @Index(value = "message"),
+        @Index(value = "text"),
+        @Index(value = "battery")
     }
 )
 public class Notification {
@@ -26,7 +29,7 @@ public class Notification {
   private int battery;
 
   @ColumnInfo(name = "contact_name", collate = ColumnInfo.NOCASE)
-  private String contact_name;
+  private String contactName;
 
   public long getId() {
     return id;
@@ -60,11 +63,11 @@ public class Notification {
     this.battery = battery;
   }
 
-  public String getContact_name() {
-    return contact_name;
+  public String getContactName() {
+    return contactName;
   }
 
-  public void setContact_name(String contact_name) {
-    this.contact_name = contact_name;
+  public void setContactName(String contactName) {
+    this.contactName = contactName;
   }
 }

@@ -3,6 +3,7 @@ package edu.cnm.deepdive.justdead.model.entity;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
+import androidx.room.Index;
 import androidx.room.PrimaryKey;
 import java.util.Date;
 
@@ -14,7 +15,12 @@ import java.util.Date;
             childColumns = "notification_id",
             onDelete = ForeignKey.CASCADE
         )
-    }
+    },
+    indices = {
+        @Index(value = "longitude"),
+        @Index(value = "latitude"),
+        @Index(value = "time_stamp")
+}
 )
 public class Location {
 
@@ -26,13 +32,11 @@ public class Location {
   @ColumnInfo(name = "notification_id")
   private long notificationId;
 
-  @ColumnInfo(index = true)
   private double longitude;
 
-  @ColumnInfo(index = true)
   private double latitude;
 
-  @ColumnInfo(name = "time_stamp", index = true)
+  @ColumnInfo(name = "time_stamp")
   private Date timeStamp;
 
   public long getId() {
