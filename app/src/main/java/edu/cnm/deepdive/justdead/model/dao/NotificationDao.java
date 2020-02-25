@@ -28,5 +28,5 @@ public interface NotificationDao {
   Single<Integer> delete(Notification... notifications);
 
   @Query("SELECT * FROM Notification ORDER BY battery")
-  LiveData<List<Notification>> select();
+  LiveData<List<Notification>> notification();
 }

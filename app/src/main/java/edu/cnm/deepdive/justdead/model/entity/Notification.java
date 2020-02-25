@@ -25,7 +25,7 @@ public class Notification {
   @ColumnInfo(name = "text", collate = ColumnInfo.NOCASE)
   private String text;
 
-  @ColumnInfo(name = "battery", index = true)
+
   private int battery;
 
   @ColumnInfo(name = "contact_name", collate = ColumnInfo.NOCASE)
