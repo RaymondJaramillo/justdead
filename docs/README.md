@@ -16,7 +16,7 @@ Justdead will let your loved ones worry a little less.
 
 * A forgetful person, who lives alone, wants to make sure that loved ones and friends know that they are okay.
 
-#### [User stories](user-stories.md)
+### [User stories](user-stories.md)
 
 ## Design Documentation
 
