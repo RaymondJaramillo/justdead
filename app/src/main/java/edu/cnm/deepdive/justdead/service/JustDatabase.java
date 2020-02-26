@@ -21,7 +21,7 @@ import java.util.Date;
 @TypeConverters({Converters.class})
 public abstract class JustDatabase extends RoomDatabase {
 
-  private static final String DB_NAME = "just_dp";
+  private static final String DB_NAME = "just_db";
 
   private static Application context;
 

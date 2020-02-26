@@ -6,8 +6,10 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
+import androidx.room.Transaction;
 import androidx.room.Update;
 import edu.cnm.deepdive.justdead.model.entity.Notification;
+import edu.cnm.deepdive.justdead.model.pojo.NotificationHistory;
 import io.reactivex.Single;
 import java.util.Collection;
 import java.util.List;
@@ -30,7 +32,8 @@ public interface NotificationDao {
   @Query("SELECT * FROM Notification ORDER BY battery")
   LiveData<List<Notification>> selectAll();
 
-//  @Query("SELECT * FROM Notification ORDER BY battery")
-//  LiveData<List<NotificationHistory>> selectWithHistory();
+  @Transaction
+  @Query("SELECT * FROM Notification ORDER BY battery")
+  LiveData<List<NotificationHistory>> selectWithHistory();
 
 }
