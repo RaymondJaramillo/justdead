@@ -10,22 +10,24 @@ Justdead will let your loved ones worry a little less.
 
 ## Intended users
 
-* Parents who worry when children don't answer the phone.
+* A Parent who worries when child doesn't answer the phone and they have no idea why or where their children are.
 
-* A spouse who wants to let loved ones know that their phone is close to dying.
+* A spouse who wants to let loved ones know that their phone is close to dying no matter how busy or where they are.
 
 * A forgetful person, who lives alone, wants to make sure that loved ones and friends know that they are okay.
 
-### [User stories](user-stories.md)
+#
+
+[User stories](user-stories.md)
 
 
 ## Design Documentation
 
 
-### [Wireframe diagram](wireframe.md)
+* [Wireframe diagram](wireframe.md)
 
 
-### [Entity-relationship diagram](erd.md)
+* [Entity-relationship diagram](erd.md)
 
 
 ## External services
@@ -47,14 +49,23 @@ Justdead will let your loved ones worry a little less.
     * Required: This is another vital service for the functionality of the app, it will be the way that contacts are informed.
 
 ## Implementation
-### [Data definition language (DDL)](ddl.md)
+
+* [Data definition language (DDL)](ddl.md)
 
 ## Entity classes
 
-### [Notification.java](https://github.com/RaymondJaramillo/justdead/blob/master/app/src/main/java/edu/cnm/deepdive/justdead/model/entity/Notification.java)
-### [Location.java](https://github.com/RaymondJaramillo/justdead/blob/master/app/src/main/java/edu/cnm/deepdive/justdead/model/entity/Location.java)
+* [Notification.java](https://github.com/RaymondJaramillo/justdead/blob/master/app/src/main/java/edu/cnm/deepdive/justdead/model/entity/Notification.java)
+* [Location.java](https://github.com/RaymondJaramillo/justdead/blob/master/app/src/main/java/edu/cnm/deepdive/justdead/model/entity/Location.java)
 
 ## Data Access Object (DAO) Interfaces
 
-### [NotificationDao.java](https://github.com/RaymondJaramillo/justdead/blob/master/app/src/main/java/edu/cnm/deepdive/justdead/model/dao/NotificationDao.java)
-### [LocationDao.java](https://github.com/RaymondJaramillo/justdead/blob/master/app/src/main/java/edu/cnm/deepdive/justdead/model/dao/LocationDao.java)
+* [NotificationDao.java](https://github.com/RaymondJaramillo/justdead/blob/master/app/src/main/java/edu/cnm/deepdive/justdead/model/dao/NotificationDao.java)
+* [LocationDao.java](https://github.com/RaymondJaramillo/justdead/blob/master/app/src/main/java/edu/cnm/deepdive/justdead/model/dao/LocationDao.java)
+
+## Database class
+
+* [JustDatabase.java](https://github.com/RaymondJaramillo/justdead/blob/master/app/src/main/java/edu/cnm/deepdive/justdead/service/JustDatabase.java)
+
+## Repository classes
+
+* [NotificationRepository.java](https://github.com/RaymondJaramillo/justdead/blob/master/app/src/main/java/edu/cnm/deepdive/justdead/model/repository/NotificationRepository.java)
