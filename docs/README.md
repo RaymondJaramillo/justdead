@@ -45,24 +45,4 @@ Justdead will let your loved ones worry a little less.
     * Description: A message and location will be sent through Messenger to selected contacts. 
     * Required: This is another vital service for the functionality of the app, it will be the way that contacts are informed.
 
-## Implementation
-
-* [Data definition language (DDL)](ddl.md)
-
-## Entity classes
-
-* [Notification.java](https://github.com/RaymondJaramillo/justdead/blob/master/app/src/main/java/edu/cnm/deepdive/justdead/model/entity/Notification.java)
-* [Location.java](https://github.com/RaymondJaramillo/justdead/blob/master/app/src/main/java/edu/cnm/deepdive/justdead/model/entity/Location.java)
-
-## Data Access Object (DAO) Interfaces
-
-* [NotificationDao.java](https://github.com/RaymondJaramillo/justdead/blob/master/app/src/main/java/edu/cnm/deepdive/justdead/model/dao/NotificationDao.java)
-* [LocationDao.java](https://github.com/RaymondJaramillo/justdead/blob/master/app/src/main/java/edu/cnm/deepdive/justdead/model/dao/LocationDao.java)
-
-## Database class
-
-* [JustDatabase.java](https://github.com/RaymondJaramillo/justdead/blob/master/app/src/main/java/edu/cnm/deepdive/justdead/service/JustDatabase.java)
-
-## Repository classes
-
-* [NotificationRepository.java](https://github.com/RaymondJaramillo/justdead/blob/master/app/src/main/java/edu/cnm/deepdive/justdead/model/repository/NotificationRepository.java)
+### [Data Model Implementation](data-model.md)
