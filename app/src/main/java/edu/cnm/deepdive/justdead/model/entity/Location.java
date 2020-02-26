@@ -19,7 +19,8 @@ import java.util.Date;
     indices = {
         @Index(value = "longitude"),
         @Index(value = "latitude"),
-        @Index(value = "time_stamp")
+        @Index(value = "time_stamp"),
+        @Index(value = "notification_id")
 }
 )
 public class Location {

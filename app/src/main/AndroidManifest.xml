@@ -12,18 +12,23 @@
     android:supportsRtl="true"
     android:theme="@style/AppTheme"
     tools:ignore="GoogleAppIndexingWarning">
-    <activity
-      android:label="@string/title_activity_main"
-      android:name=".controller.MainActivity">
 
-      <intent-filter>
-        <action android:name="android.intent.action.MAIN"/>
-        <category android:name="android.intent.category.LAUNCHER"/>
-      </intent-filter>
+  <activity
+    android:name=".controller.LoginActivity">
 
-    </activity>
-    <activity android:name=".controller.LoginActivity"/>
+    <intent-filter>
+      <action android:name="android.intent.action.MAIN"/>
 
-  </application>
+      <category android:name="android.intent.category.LAUNCHER"/>
+    </intent-filter>
 
-</manifest>
+  </activity>
+
+  <activity
+    android:name=".controller.MainActivity">
+  </activity>
+
+</application>
+
+
+  </manifest>

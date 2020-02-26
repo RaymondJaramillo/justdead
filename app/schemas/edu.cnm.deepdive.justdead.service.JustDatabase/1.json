@@ -146,6 +146,14 @@
               "time_stamp"
             ],
             "createSql": "CREATE INDEX IF NOT EXISTS `index_Location_time_stamp` ON `${TABLE_NAME}` (`time_stamp`)"
+          },
+          {
+            "name": "index_Location_notification_id",
+            "unique": false,
+            "columnNames": [
+              "notification_id"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_Location_notification_id` ON `${TABLE_NAME}` (`notification_id`)"
           }
         ],
         "foreignKeys": [

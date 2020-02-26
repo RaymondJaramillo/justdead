@@ -1,5 +1,7 @@
 # User stories
 
-* A Parent is looking to make sure that even if their child's phone dies, due to them being on it way too much, they know that it is about to die and have a chance to give them a call before it dies and know where they are headed. 
+* As a parent with children who are always out of the house and also on their phones, I want a way to know that their phone is dying with out relying on them to tell me. 
 
-* A husbands phone sends out an automatic notification when his phone is about to die. His wife calls him, before his phone dies, to remind him of some errands he was suppose to run before he comes home.
+* As a husband with a worried wife, I want to make sure that even if I can't get a hold of my family they know why and where I last was.
+
+* As a forgetful person living my own, I want to make sure that if my phone is dead loved ones know why they can't get a hold of me and have my last known location.

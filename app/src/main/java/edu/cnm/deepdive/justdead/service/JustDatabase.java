@@ -38,6 +38,7 @@ public abstract class JustDatabase extends RoomDatabase {
   public abstract LocationDao getLocationDao();
 
     private static class InstanceHolder {
+
       private static final JustDatabase INSTANCE = Room.databaseBuilder(
           context, JustDatabase.class, DB_NAME)
           .build();
