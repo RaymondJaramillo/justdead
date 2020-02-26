@@ -45,4 +45,4 @@ Justdead will let your loved ones worry a little less.
     * Description: A message and location will be sent through Messenger to selected contacts. 
     * Required: This is another vital service for the functionality of the app, it will be the way that contacts are informed.
 
-### [Data Model Implementation](data-model.md)
+# [Data Model Implementation](data-model.md)
