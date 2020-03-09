@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.justdead.controller.ui.dashboard;
+package edu.cnm.deepdive.justdead.controller;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,18 +12,17 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import edu.cnm.deepdive.justdead.R;
 
+public class HomeFragment extends Fragment {
 
-public class DashboardFragment extends Fragment {
-
-  private DashboardViewModel dashboardViewModel;
+  private HomeViewModel homeViewModel;
 
   public View onCreateView(@NonNull LayoutInflater inflater,
       ViewGroup container, Bundle savedInstanceState) {
-    dashboardViewModel =
-        ViewModelProviders.of(this).get(DashboardViewModel.class);
-    View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
-    final TextView textView = root.findViewById(R.id.text_dashboard);
-    dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+    homeViewModel =
+        ViewModelProviders.of(this).get(HomeViewModel.class);
+    View root = inflater.inflate(R.layout.fragment_home, container, false);
+    final TextView textView = root.findViewById(R.id.text_home);
+    homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
       @Override
       public void onChanged(@Nullable String s) {
         textView.setText(s);

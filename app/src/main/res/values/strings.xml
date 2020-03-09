@@ -2,8 +2,8 @@
   <string name="app_name">Justdead</string>
   <string name="title_activity_main">MainActivity</string>
   <string name="title_home">Home</string>
-  <string name="title_dashboard">Dashboard</string>
-  <string name="title_notifications">Notifications</string>
+  <string name="title_dashboard">Messages</string>
+  <string name="title_notifications">Contacts</string>
   <string name="sign_out">Sign out</string>
   <string name="login_failure">Unable to sign in with the provided credentials</string>
 </resources>
