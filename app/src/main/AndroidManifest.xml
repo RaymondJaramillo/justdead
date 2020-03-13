@@ -3,6 +3,8 @@
   xmlns:tools="http://schemas.android.com/tools"
   package="edu.cnm.deepdive.justdead">
 
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.READ_CONTACTS" />
   <application
     android:name=".JustdeadApplication"
     android:allowBackup="false"
