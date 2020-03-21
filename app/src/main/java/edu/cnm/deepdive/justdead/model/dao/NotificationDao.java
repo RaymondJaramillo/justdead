@@ -24,7 +24,7 @@ public interface NotificationDao {
   Single<List<Long>> insert(Collection<Notification> notifications);
 
   @Update
-  int update(Notification notification);
+  Single<Integer> update(Notification... notifications);
 
   @Delete
   Single<Integer> delete(Notification... notifications);
@@ -35,5 +35,8 @@ public interface NotificationDao {
   @Transaction
   @Query("SELECT * FROM Notification ORDER BY battery")
   LiveData<List<NotificationHistory>> selectWithHistory();
+
+  @Query("SELECT * FROM Notification WHERE notification_id = :id")
+  LiveData<Notification> select(long id);
 
 }

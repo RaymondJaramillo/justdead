@@ -12,14 +12,15 @@
     tools:layout="@layout/fragment_home"/>
 
   <fragment
-    android:id="@+id/navigation_dashboard"
-    android:label="@string/title_dashboard"
+    android:id="@+id/navigation_notifications"
+    android:label="@string/title_notifications"
+    android:name="edu.cnm.deepdive.justdead.controller.NotificationsFragment"
+    tools:layout="@layout/fragment_contacts"/>
+
+  <fragment
+    android:id="@+id/navigation_events"
+    android:label="@string/title_events"
     android:name="edu.cnm.deepdive.justdead.controller.MessagesFragment"
     tools:layout="@layout/fragment_messages"/>
 
-  <fragment
-    android:id="@+id/navigation_notifications"
-    android:label="@string/title_notifications"
-    android:name="edu.cnm.deepdive.justdead.controller.ContactsFragment"
-    tools:layout="@layout/fragment_contacts"/>
 </navigation>

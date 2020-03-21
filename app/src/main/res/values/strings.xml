@@ -10,4 +10,6 @@
   <string name="load_contacts">Load contacts</string>
   <string name="call">Call</string>
   <string name="enter_phone_number">Enter phone number</string>
+  <string name="title_events">Events</string>
+  <string name="title_notifications">Notifications</string>
 </resources>
