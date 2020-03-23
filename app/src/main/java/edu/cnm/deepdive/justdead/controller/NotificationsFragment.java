@@ -1,5 +1,9 @@
 package edu.cnm.deepdive.justdead.controller;
 
+import static android.Manifest.permission.READ_CONTACTS;
+
+
+import android.os.Build.VERSION_CODES;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -14,8 +18,10 @@ import edu.cnm.deepdive.justdead.R;
 
 public class NotificationsFragment extends Fragment {
 
+  private static final int SCOPED_STORAGE_BUILD_VERSION = VERSION_CODES.Q;
   private RecyclerView notificationList;
   private NotificationsViewModel viewModel;
+  private boolean showContacts = false;
 
   @Nullable
   @Override
@@ -36,6 +42,14 @@ public class NotificationsFragment extends Fragment {
     viewModel.getContacts().observe(getViewLifecycleOwner(), (contacts) -> {
       Log.d(getClass().getName(), contacts.toString());
 
+    });
+    viewModel.getPermissions().observe(getViewLifecycleOwner(), (permissions) -> {
+    boolean contactsAllowed = permissions.contains(READ_CONTACTS);
+      /*if (showContacts != contactsAllowed) {
+        showContacts = contactsAllowed;
+        getActivity().invalidateOptionsMenu();
+      }
+*/
     });
   }
 }

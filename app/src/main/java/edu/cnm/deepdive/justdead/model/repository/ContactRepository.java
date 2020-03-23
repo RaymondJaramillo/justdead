@@ -7,8 +7,13 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.provider.ContactsContract.CommonDataKinds.Phone;
 import android.provider.ContactsContract.Contacts;
+import androidx.lifecycle.LiveData;
 import edu.cnm.deepdive.justdead.JustdeadApplication;
+import edu.cnm.deepdive.justdead.model.dao.NotificationDao;
+import edu.cnm.deepdive.justdead.model.entity.Notification;
 import edu.cnm.deepdive.justdead.model.pojo.Contact;
+import edu.cnm.deepdive.justdead.service.JustDatabase;
+import io.reactivex.Completable;
 import io.reactivex.Single;
 import io.reactivex.schedulers.Schedulers;
 import java.util.ArrayList;
@@ -22,13 +27,12 @@ public class ContactRepository {
 
   private static final String[] CONTACT_FIELDS = {Contacts._ID, Contacts.LOOKUP_KEY, Contacts.DISPLAY_NAME_PRIMARY};
 
+
   private Context context;
 
 
    public ContactRepository(Context context) {
     this.context = context;
-
-
   }
 
   public Single<List<Contact>> getAll() {

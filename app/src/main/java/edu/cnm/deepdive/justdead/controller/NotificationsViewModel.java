@@ -14,7 +14,9 @@ import edu.cnm.deepdive.justdead.model.repository.ContactRepository;
 import edu.cnm.deepdive.justdead.model.repository.NotificationRepository;
 import edu.cnm.deepdive.justdead.service.JustDatabase;
 import java.net.URI;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class NotificationsViewModel extends AndroidViewModel {
 
@@ -28,6 +30,7 @@ public class NotificationsViewModel extends AndroidViewModel {
   private final LiveData<Notification> notification;
   private final MutableLiveData<Throwable> throwable;
   private final JustDatabase database;
+  private final MutableLiveData<Set<String>> permissions;
   // TODO Add Live data fields for locations.
 
   public NotificationsViewModel(@NonNull Application application) {
@@ -42,6 +45,7 @@ public class NotificationsViewModel extends AndroidViewModel {
     notificationId = new MutableLiveData<>();
     notification = Transformations.switchMap(notificationId, (id) -> database.getNotificationDao().select(id));
     throwable = new MutableLiveData<>();
+    permissions = new MutableLiveData<>(new HashSet<>());
     // TODO Initialize live data fields for locations.
     refreshContacts();
   }
@@ -60,6 +64,24 @@ public class NotificationsViewModel extends AndroidViewModel {
 
   public LiveData<Throwable> getThrowable() {
     return throwable;
+  }
+
+  public MutableLiveData<Set<String>> getPermissions() {
+    return permissions;
+  }
+
+  public void grantPermission(String permission) {
+    Set<String> permissions = this.permissions.getValue();
+    if (permissions.add(permission)) {
+      this.permissions.setValue(permissions);
+    }
+  }
+
+  public void revokePermission(String permission) {
+    Set<String> permissions = this.permissions.getValue();
+    if (permissions.remove(permission)) {
+      this.permissions.setValue(permissions);
+    }
   }
 
   public void refreshContacts() {
