@@ -42,7 +42,12 @@ public class Contact {
       this.uri = uri;
     }
 
+  @NonNull
+  @Override
+  public String toString() {
+    return displayName;
   }
+}
 
 
 

@@ -1,5 +1,6 @@
 package edu.cnm.deepdive.justdead.model.entity;
 
+import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.Index;
@@ -28,7 +29,12 @@ public class Notification {
 
   private int battery;
 
-  @ColumnInfo(name = "contact_name", collate = ColumnInfo.NOCASE)
+  @NonNull
+  @ColumnInfo(name = "contact_uri")
+  private String contactUri;
+
+  @NonNull
+  @ColumnInfo(name = "contact_name")
   private String contactName;
 
   public long getId() {
@@ -63,11 +69,20 @@ public class Notification {
     this.battery = battery;
   }
 
+  public String getContactUri() {
+    return contactUri;
+  }
+
+  public void setContactUri(String contactUri) {
+    this.contactUri = contactUri;
+  }
+
+  @NonNull
   public String getContactName() {
     return contactName;
   }
 
-  public void setContactName(String contactName) {
+  public void setContactName(@NonNull String contactName) {
     this.contactName = contactName;
   }
 }

@@ -15,7 +15,7 @@
     android:id="@+id/navigation_notifications"
     android:label="@string/title_notifications"
     android:name="edu.cnm.deepdive.justdead.controller.NotificationsFragment"
-    tools:layout="@layout/fragment_contacts"/>
+    tools:layout="@layout/fragment_notifications"/>
 
   <fragment
     android:id="@+id/navigation_events"

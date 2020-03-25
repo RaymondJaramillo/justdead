@@ -49,8 +49,7 @@ public class NotificationRepository {
     return dao.selectAll();
   }
 
-  public LiveData<Notification> get() {
-    return dao.
-        .subscribeOn(Schedulers.io());
+  public LiveData<Notification> get(long id) {
+    return dao.select(id);
   }
 }

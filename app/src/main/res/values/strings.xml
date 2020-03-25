@@ -12,4 +12,9 @@
   <string name="enter_phone_number">Enter phone number</string>
   <string name="title_events">Events</string>
   <string name="title_notifications">Notifications</string>
+
+  <string name="name_of_contact">Name of Contact</string>
+  <string name="text_of_message">Text of Message</string>
+  <string name="notification_details_title">Notification details</string>
+  <string name="battery_notification_level">Battery Notification Level</string>
 </resources>
