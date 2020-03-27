@@ -1,6 +1,7 @@
 ## Description 
 
-
+In connected world that we will in today people are always reachable by their phones. If someone calls you most, (especially family and loved ones), expect you to answer. We also live in a time where their are countless ways to make sure our phones are always charged, but we still find them being allways dead. the goal of this project was to make sure that, even if we are forgetful, our loved ones will still know that we are okay.
+This is exactly what Justdead will provide. With justdead you can send a notification to loved one automatically if your cellphone battery get too low. All you would have to do is select a contact, prepare a message for the selected contact, and select a battery level 
 
 ## Intended users
 
