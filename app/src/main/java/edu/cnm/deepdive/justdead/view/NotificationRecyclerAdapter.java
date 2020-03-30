@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
+import edu.cnm.deepdive.justdead.R;
 import edu.cnm.deepdive.justdead.model.entity.Notification;
 import edu.cnm.deepdive.justdead.view.NotificationRecyclerAdapter.Holder;
 import java.util.List;
@@ -28,7 +29,7 @@ public class NotificationRecyclerAdapter extends RecyclerView.Adapter<Holder> {
   @NonNull
   @Override
   public Holder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-    View root = LayoutInflater.from(context).inflate(/*Specify layout resource*/, parent, false);
+    View root = LayoutInflater.from(context).inflate(R.layout.fragment_home, parent, false);
     return new Holder(root);
   }
 

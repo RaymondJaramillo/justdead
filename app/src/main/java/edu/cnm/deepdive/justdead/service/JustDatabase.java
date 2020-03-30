@@ -6,15 +6,13 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.room.TypeConverter;
 import androidx.room.TypeConverters;
-import edu.cnm.deepdive.justdead.model.dao.LocationDao;
 import edu.cnm.deepdive.justdead.model.dao.NotificationDao;
-import edu.cnm.deepdive.justdead.model.entity.Location;
 import edu.cnm.deepdive.justdead.model.entity.Notification;
 import edu.cnm.deepdive.justdead.service.JustDatabase.Converters;
 import java.util.Date;
 
 @Database(
-    entities = {Notification.class, Location.class},
+    entities = {Notification.class},
     version = 1,
     exportSchema = true
 )
@@ -35,7 +33,7 @@ public abstract class JustDatabase extends RoomDatabase {
 
   public abstract NotificationDao getNotificationDao();
 
-  public abstract LocationDao getLocationDao();
+
 
     private static class InstanceHolder {
 

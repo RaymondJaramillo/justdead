@@ -20,7 +20,6 @@ import edu.cnm.deepdive.justdead.R;
 import edu.cnm.deepdive.justdead.model.entity.Notification;
 import edu.cnm.deepdive.justdead.model.pojo.Contact;
 import java.util.List;
-import java.util.UUID;
 
 public class NotificationEditFragment extends DialogFragment {
 

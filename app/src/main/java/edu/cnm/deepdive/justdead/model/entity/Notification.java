@@ -9,6 +9,7 @@ import androidx.room.PrimaryKey;
 @Entity(
     indices =  {
         @Index(value = "contact_name", unique = true),
+        @Index(value = "contact_uri", unique = true),
         @Index(value = "message"),
         @Index(value = "text"),
         @Index(value = "battery")
